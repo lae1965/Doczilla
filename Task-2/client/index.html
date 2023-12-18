@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="heading">Список студентов</h1>
+    <div class="listing">
+      <ul class="table-line listing__title">
+        <li class="center item">id</li>
+        <li class="center item">Фамилия</li>
+        <li class="center item">Имя</li>
+        <li class="center item">Отчество</li>
+        <li class="center item">Дата рождения</li>
+        <li class="center item">Группа</li>
+      </ul>
+      <form class="table-line listing__input">
+        <div style="border: 1px solid beige;"></div>
+        <input type="text" name="last-name">
+        <input type="text" name="first-name">
+        <input type="text" name="patronymic">
+        <input type="date" name="birth-date">
+        <input type="text" name="group" class="group__input">
+        <button type="submit" class="send" title="Сохранить"><img src="./public/save.png" alt="send"></button>
+      </form>
+      <div class="listing__students">
+        <!-- <ul class="table-line listing__item" tabindex="0">
+          <li class="item">987987</li>
+          <li class="item">Лашкевич</li>
+          <li class="item">Андрей</li>
+          <li class="item">Евгеньевич</li>
+          <li class="item">24.01.1965</li>
+          <li class="item">463</li>
+          <li class="erase">
+            <button type="button" title="Удалить" tabindex="-1">
+              <img src="./public/erase.png" alt="erase">
+            </button>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./src/index.js"></script>
+</body>
+
+</html>
